@@ -3,7 +3,6 @@ import fs from "fs"
 import fetch from "node-fetch"
 
 const LICENSE_SERVER_URL = "https://masqr.gointerstellar.app/validate?license="
-const Fail = fs.readFileSync("Failed.html", "utf8")
 
 export function setupMasqr(app) {
   app.use(async (req, res, next) => {
